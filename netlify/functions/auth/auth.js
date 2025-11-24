@@ -1,4 +1,5 @@
-const fetch = require("node-fetch");
+// No need to import fetch — Netlify provides it globally
+
 
 exports.handler = async function (event) {
   const params = new URLSearchParams(event.rawQuery || "");
